@@ -1,0 +1,37 @@
+:root{
+  --primary:#2563eb;
+  --secondary:#0f172a;
+  --success:#10b981;
+  --danger:#ef4444;
+  --background:#f8fafc;
+  --card:#ffffff;
+  --border:#e2e8f0;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter, Arial, sans-serif;
+}
+
+body{
+  background:var(--background);
+  color:#222;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+button{
+  cursor:pointer;
+  border:none;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}

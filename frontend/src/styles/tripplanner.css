@@ -1,0 +1,177 @@
+/* =========================
+   PAGE CONTAINER
+========================= */
+
+.trip-planner-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* =========================
+   CONTENT WRAPPER
+========================= */
+
+.trip-planner-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* =========================
+   HEADER SECTION
+========================= */
+
+.trip-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  text-align: center;
+}
+
+.trip-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.trip-header p {
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.trip-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   CARD STYLING
+========================= */
+
+.trip-card {
+  width: 100%;
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.05),
+    0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 576px) {
+
+  .trip-planner-container {
+    padding: 20px 15px;
+  }
+
+  .trip-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .trip-header p {
+    font-size: 0.9rem;
+  }
+
+  .trip-card {
+    padding: 18px;
+    border-radius: 14px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+  .trip-planner-container {
+    padding: 25px;
+  }
+
+  .trip-header h1 {
+    font-size: 2rem;
+  }
+
+  .trip-card {
+    padding: 24px;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .trip-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .trip-card {
+    padding: 30px;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media screen and (min-width: 1025px) {
+
+  .trip-planner-container {
+    padding: 40px;
+  }
+
+  .trip-header h1 {
+    font-size: 2.8rem;
+  }
+
+  .trip-header p {
+    font-size: 1.05rem;
+  }
+
+  .trip-card {
+    padding: 40px;
+  }
+}
+
+/* =========================
+   LARGE SCREEN
+========================= */
+
+@media screen and (min-width: 1440px) {
+
+  .trip-planner-container {
+    max-width: 1400px;
+  }
+
+  .trip-header h1 {
+    font-size: 3.2rem;
+  }
+
+  .trip-card {
+    padding: 50px;
+  }
+}

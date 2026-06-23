@@ -1,0 +1,168 @@
+/* =========================
+   BUDGET CARD
+========================= */
+
+.budget-card {
+  width: 100%;
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  padding: 24px;
+  margin-top: 24px;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.08);
+
+  border-left: 6px solid #22c55e;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.budget-card h2 {
+  color: #166534;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* =========================
+   BUDGET ITEMS
+========================= */
+
+.budget-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.budget-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #f8fafc;
+
+  padding: 12px 16px;
+
+  border-radius: 10px;
+}
+
+.budget-item span:first-child {
+  color: #334155;
+  font-weight: 500;
+}
+
+.budget-item span:last-child {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* =========================
+   TOTAL
+========================= */
+
+.total-budget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #22c55e;
+  color: white;
+
+  padding: 15px 18px;
+
+  border-radius: 12px;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 576px) {
+
+  .budget-card {
+    padding: 18px;
+  }
+
+  .budget-card h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .budget-item {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .total-budget {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+  .budget-card {
+    padding: 22px;
+  }
+
+  .budget-card h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .budget-card {
+    padding: 26px;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media screen and (min-width: 1025px) {
+
+  .budget-card {
+    padding: 30px;
+  }
+
+  .budget-card h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* =========================
+   LARGE SCREEN
+========================= */
+
+@media screen and (min-width: 1440px) {
+
+  .budget-card {
+    padding: 35px;
+  }
+
+  .budget-card h2 {
+    font-size: 2rem;
+  }
+}

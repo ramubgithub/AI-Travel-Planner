@@ -1,0 +1,177 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Inter, Arial, sans-serif;
+}
+
+.login-page{
+  min-height:100vh;
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+
+  background:linear-gradient(
+    135deg,
+    #2563eb,
+    #1e3a8a
+  );
+}
+
+.login-container{
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.login-card{
+  width:100%;
+  max-width:450px;
+
+  background:#ffffff;
+
+  padding:40px 30px;
+
+  border-radius:20px;
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.15);
+
+  display:flex;
+  flex-direction:column;
+}
+
+.login-header{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.login-header h2{
+  color:#111827;
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+.login-header p{
+  color:#6b7280;
+  font-size:15px;
+}
+
+.login-form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.login-form input{
+  width:100%;
+  height:55px;
+
+  padding:0 15px;
+
+  border:1px solid #d1d5db;
+  border-radius:10px;
+
+  font-size:16px;
+
+  outline:none;
+
+  transition:0.3s;
+}
+
+.login-form input:focus{
+  border-color:#2563eb;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(37,99,235,.15);
+}
+
+.login-btn{
+  width:100%;
+  height:55px;
+
+  border:none;
+  border-radius:10px;
+
+  background:#2563eb;
+  color:white;
+
+  font-size:16px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.login-btn:hover{
+  background:#1d4ed8;
+}
+
+.login-btn:active{
+  transform:scale(0.98);
+}
+
+/* Mobile */
+
+@media screen and (max-width:480px){
+
+  .login-card{
+    padding:25px 20px;
+  }
+
+  .login-header h2{
+    font-size:1.6rem;
+  }
+
+  .login-form input{
+    height:50px;
+    font-size:14px;
+  }
+
+  .login-btn{
+    height:50px;
+  }
+}
+
+/* Tablet */
+
+@media screen and (min-width:768px){
+
+  .login-card{
+    max-width:500px;
+    padding:45px;
+  }
+}
+
+/* Laptop */
+
+@media screen and (min-width:1024px){
+
+  .login-card{
+    max-width:550px;
+  }
+}
+
+/* Large Desktop */
+
+@media screen and (min-width:1440px){
+
+  .login-card{
+    max-width:600px;
+  }
+
+  .login-header h2{
+    font-size:2.4rem;
+  }
+}

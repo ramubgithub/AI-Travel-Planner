@@ -1,0 +1,232 @@
+/* =========================
+   ITINERARY CARD
+========================= */
+
+.trip-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.08);
+
+  border-left: 5px solid #7c3aed;
+
+  transition: 0.3s ease;
+}
+
+.trip-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.trip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+.trip-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+
+  word-break: break-word;
+}
+
+.trip-badge {
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #8b5cf6
+  );
+
+  color: #ffffff;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+/* =========================
+   INFO SECTION
+========================= */
+
+.trip-info {
+  display: flex;
+  gap: 16px;
+
+  margin-bottom: 25px;
+}
+
+.info-box {
+  flex: 1;
+
+  background: #f8fafc;
+
+  border-radius: 14px;
+
+  padding: 18px;
+
+  text-align: center;
+
+  border: 1px solid #e2e8f0;
+}
+
+.info-box p {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.info-box h4 {
+  color: #0f172a;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* =========================
+   ITINERARY SECTION
+========================= */
+
+.itinerary-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.day-card {
+  background: #f8fafc;
+
+  border-left: 5px solid  #0f172a;
+
+  border-radius: 12px;
+
+  padding: 18px;
+
+  transition: 0.3s ease;
+}
+
+.day-card:hover {
+  background: #f1f5f9;
+}
+
+.day-card h3 {
+  color: #7c3aed;
+
+  margin-bottom: 12px;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.day-card ul {
+  list-style: disc;
+
+  padding-left: 22px;
+}
+
+.day-card li {
+  color: #334155;
+
+  margin-bottom: 10px;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media screen and (max-width: 992px) {
+  .trip-header h2 {
+    font-size: 1.7rem;
+  }
+
+  .info-box h4 {
+    font-size: 1.1rem;
+  }
+}
+
+/* =========================
+   MOBILE DEVICES
+========================= */
+
+@media screen and (max-width: 768px) {
+  .trip-card {
+    padding: 18px;
+  }
+
+  .trip-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .trip-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .trip-info {
+    flex-direction: column;
+  }
+
+  .trip-badge {
+    width: fit-content;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media screen and (max-width: 480px) {
+  .trip-card {
+    padding: 15px;
+    border-radius: 16px;
+  }
+
+  .trip-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .trip-badge {
+    font-size: 0.75rem;
+    padding: 8px 14px;
+  }
+
+  .info-box {
+    padding: 14px;
+  }
+
+  .info-box h4 {
+    font-size: 1rem;
+  }
+
+  .day-card {
+    padding: 14px;
+  }
+
+  .day-card h3 {
+    font-size: 1rem;
+  }
+
+  .day-card li {
+    font-size: 0.9rem;
+  }
+}

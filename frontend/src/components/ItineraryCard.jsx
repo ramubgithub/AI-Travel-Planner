@@ -1,4 +1,4 @@
-import "../styles/itineraryCard.css";
+import "../styles/itinerarycard.css";
 
 function ItineraryCard({ trip }) {
   let itinerary;

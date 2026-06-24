@@ -4,7 +4,7 @@ import api from "../services/api";
 import BudgetCard from "./BudgetCard";
 import HotelCard from "./HotelCard";
 
-import "../styles/tripForm.css";
+import "../styles/tripform.css";
 
 function TripForm() {
   const [trip, setTrip] =

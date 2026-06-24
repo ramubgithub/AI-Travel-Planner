@@ -1,4 +1,4 @@
-import "../styles/budgetCard.css";
+import "../styles/budgetcard.css";
 
 function BudgetCard({ budget }) {
   if (!budget) return null;

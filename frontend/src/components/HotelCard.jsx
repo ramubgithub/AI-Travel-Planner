@@ -1,5 +1,4 @@
-import "../styles/hotelCard.css";
-
+import "../styles/hotelcard.css";
 function HotelCard({ hotels }) {
   if (!hotels || hotels.length === 0) return null;
 

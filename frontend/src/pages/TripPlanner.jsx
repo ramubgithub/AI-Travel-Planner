@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import TripForm from "../components/TripForm";
-import "../styles/tripPlanner.css";
+import "../styles/tripplanner.css";
 
 function TripPlanner() {
   return (
